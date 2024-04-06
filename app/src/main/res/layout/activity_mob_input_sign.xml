@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dispatcher.DisInputSignActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1E90FF"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape">
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:text="Kendaraan tersebut telah diserahkan oleh konsumen/pemakai sehubungan dengan konsumen telah wan prestasi atas kewajiban pembayaran angsuran ke :" />-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_tanggalawal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="false"-->
+            <!--android:textColor="@color/blue_gradient_end"-->
+            <!--android:hint=".........."/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" s/d "/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_tanggalakhir"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="false"-->
+            <!--android:textColor="@color/blue_gradient_end"-->
+            <!--android:hint=".........."/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="sesuai dengan Perjanjian Pembiayaan no."/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_pembiayaan"-->
+            <!--android:textColor="@color/blue_gradient_end"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="Dalam waktu 7 (tujuh) hari kalender setelah penarikan kendaraan, konsumen/lessee wajib melunasi seluruh kewajiban tersisa termasuk denda keterlambatan dan biaya lainnya."/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="Jika dalam jangka waktu 7 hari kalender setelah penarikan kendaraan, konsumen tidak melakukan pelunasan seluruh kewajibannya, maka konsumen kehilangan haknya atas kendaraan tersebut dan PT Clipan Finance Indonesia akan segera melakukan penjualan kendaraan tersebut. Seluruh barang yang melekat baik di dalam, maupun di luar kendaraan menjadi hak PT Clipan Finance Indonesia sepenuhnya."/>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorOrange">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Penarikan Kendaraan Ke Pool"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_btn_blue"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/text_no_item"
+                android:orientation="horizontal">
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@color/text_white"-->
+                <!--android:text="Diserahkan Oleh :">-->
+                <!--</TextView>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@color/text_white"
+                    android:text="Diterima Oleh :">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/text_no_item"
+                android:orientation="horizontal">
+                <!--<LinearLayout-->
+                <!--android:onClick="ShowPopupPenarikan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:background="@color/text_white">-->
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_picpenarikan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:onClick="ShowPopupPenyimpanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/iv_picpenyimpanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--<LinearLayout-->
+                <!--android:onClick="ShowPopupPenjualan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:background="@color/text_white">-->
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_picpenjualan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/text_no_item"
+                android:orientation="horizontal">
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@color/text_white"-->
+                <!--android:text="PIC Penarikan">-->
+                <!--</TextView>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@color/text_white"
+                    android:text="PIC Penarikan">
+                </TextView>
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@color/text_white"-->
+                <!--android:text="PIC Penjualan">-->
+                <!--</TextView>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button_green"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

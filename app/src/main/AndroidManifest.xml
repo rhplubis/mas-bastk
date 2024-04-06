@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tunasrent.auctionapps">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- versi Oreo 8.0 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon_new"
+        android:label="E-BASTK Online"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_icon_new"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".bp.BpCekCeklistMotorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_bp_cek_ceklist_motor"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <!-- <activity -->
+        <!-- android:name=".dispatcher.DisInputCeklistMotorActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_dis_input_ceklist_motor" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- apabila targetSdkVersion 28 (Android 9.0) -->
+        <activity android:name=".mobilisasi.MobCekBastkCeklistActivity" />
+        <activity android:name=".mobilisasi.MobCekBastkListActivity" />
+        <activity android:name=".mobilisasi.MobListActivity" />
+        <activity android:name=".dispatcher.DisCekBastkCeklistActivity" />
+        <activity android:name=".dispatcher.DisCekBastkListActivity" />
+        <activity android:name=".mobilisasi.MobInputSignActivity" />
+        <activity android:name=".mobilisasi.MobInputFotoActivity" />
+        <activity android:name=".warehouse.WarehouseCekPriceActivity" />
+        <activity android:name=".warehouse.WarehouseCekSignActivity" />
+        <activity android:name=".warehouse.WarehouseCekFotoActivity" />
+        <activity android:name=".warehouse.WarehouseCekCeklistActivity" />
+        <activity android:name=".warehouse.WarehouseCekCeklistMotorActivity" />
+        <activity android:name=".warehouse.WarehouseCekFormActivity" />
+        <activity android:name=".taksasi.TaksasiSetpriceActivity" />
+        <activity android:name=".taksasi.TaksasiCekSignActivity" />
+        <activity android:name=".mobilisasi.MobInputCeklistMotorActivity" />
+        <activity android:name=".mobilisasi.MobInputCeklistActivity" />
+        <activity android:name=".mobilisasi.MobInputFormActivity" />
+        <activity android:name=".taksasi.TaksasiCekFotoActivity" />
+        <activity android:name=".taksasi.TaksasiCekCeklistActivity" />
+        <activity android:name=".taksasi.TaksasiCekCeklistMotorActivity" />
+        <activity android:name=".taksasi.TaksasiCekFormActivity" />
+        <activity android:name=".dispatcher.Main2Activity" />
+        <activity android:name=".bp.BpCekSignActivity" />
+        <activity android:name=".bp.BpCekFotoActivity" />
+        <activity android:name=".bp.BpCekCeklistActivity" />
+        <activity android:name=".bp.BpCekFormActivity" />
+        <activity android:name=".bp.BpInputSignActivity" />
+        <activity android:name=".bp.BpInputFotoActivity" />
+        <activity android:name=".bp.BpInputCeklistActivity" />
+        <activity android:name=".bp.BpInputFormActivity" />
+        <activity android:name=".dispatcher.DisApprovalSignActivity" />
+        <activity android:name=".dispatcher.DisApprovalFotoActivity" />
+        <activity android:name=".dispatcher.DisApprovalCeklistActivity" />
+        <activity android:name=".dispatcher.DisApprovalCeklistMotorActivity" />
+        <activity android:name=".dispatcher.DisApprovalFormActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="LOGINACTIVITY"></action> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"></category> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <service
+            android:name=".FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".dispatcher.DisInputCeklistMotorActivity" />
+        <activity android:name=".dispatcher.DisInputCeklistActivity" />
+        <activity android:name=".dispatcher.DisInputFormActivity" />
+        <activity android:name=".dispatcher.DisInputSignActivity" />
+        <activity android:name=".dispatcher.DisInputFotoActivity" />
+        <activity android:name=".dispatcher.DisApprovalListActivity" />
+        <activity android:name=".bp.BpListActivity" />
+        <activity android:name=".taksasi.TaksasiActivity" />
+        <activity android:name=".warehouse.WarehouseActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taksasi.TaksasiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_search_view_check">
+
+        <include layout="@layout/toolbar"/>
+        <include layout="@layout/search_toolbar"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="1dp"
+            android:scrollbars="none"
+            />
+
+        <FrameLayout
+            android:id="@+id/default_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:visibility="gone"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:id="@+id/top_icon_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_nodata_web" />
+<!--                <TextView-->
+<!--                    android:id="@+id/item_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:ellipsize="marquee"-->
+<!--                    android:focusable="true"-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:freezesText="true"-->
+<!--                    android:marqueeRepeatLimit="marquee_forever"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Data Not Found"-->
+<!--                    android:textColor="@color/blue_gradient_end"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:gravity="center_horizontal"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:ellipsize="marquee"-->
+<!--                    android:focusable="true"-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:freezesText="true"-->
+<!--                    android:marqueeRepeatLimit="marquee_forever"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Maybe go back and try again.."-->
+<!--                    android:textColor="#666633"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:gravity="center_horizontal"/>-->
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

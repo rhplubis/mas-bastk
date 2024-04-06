@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#1E90FF</color>
+    <color name="colorPrimaryDark">#4169E1</color>
+    <color name="colorAccent">#1E90FF</color>
+
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextBlack">#000000</color>
+
+    <color name="swipe_1">#1E90FF</color>
+    <color name="swipe_2">#39fa43</color>
+    <color name="swipe_3">#f25151</color>
+    <color name="swipe_4">#808080</color>
+    <color name="colorGray">#505050</color>
+
+    <color name="background_yellow">#ffff00</color>
+    <color name="background_blue_trans">#cce6ff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="ggray">#003366</color>
+    <color name="white_transparent">#dcffffff</color>
+    <color name="white_disable">#a0ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_trans_image">#5a000000</color>
+    <color name="green">#27AB2E</color>
+    <color name="yellow">#FCD410</color>
+
+    <color name="text_white">@color/white</color>
+    <color name="text_disabled">#e0e0d1</color>
+    <color name="text_gray">#818181</color>
+    <color name="text_no_item">#505050</color>
+    <color name="text_red">#F61100</color>
+    <!--<color name="text_hint">#99D2FD</color>-->
+    <color name="text_hint">@color/colorAccent</color>
+    <color name="text_green">#A7D959</color>
+    <color name="text_default">#272727</color>
+    <color name="text_main_menu">#565C6E</color>
+    <color name="text_title_intro">#0D59AB</color>
+    <color name="text_desc_intro">#82899E</color>
+    <color name="text_blue">#0D59AB</color>
+    <color name="text_profile">#757D95</color>
+    <color name="text_dialog_title">#0F62CD</color>
+
+    <color name="divider">#c9c9d1</color>
+
+    <color name="route_red_">#FF9999</color>
+    <color name="route_blue_">#99d8ff</color>
+    <color name="route_blue">#22A2FD</color>
+
+    <color name="placeholder_image">#e4e4e4</color>
+
+    <color name="btn_red">#FA5050</color>
+    <color name="blue_gradient_start">#1063CE</color>
+    <color name="blue_gradient_end">#1C8DFA</color>
+
+    <color name="mdtp_transparent_black">#7f000000</color>
+    <color name="selected_menu">#9099d2fd</color>
+
+    <color name="fifty_percent_transparency_grey_400">#80bdbdbd</color>
+
+    <color name="colorAddrStart">#7ADE81</color>
+    <color name="colorAddrStartPressed">#58bc5f</color>
+    <color name="colorAddrEnd">#FCB951</color>
+    <color name="colorAddrEndPressed">#d19436</color>
+    <color name="colorOrange">#FF8C00</color>
+    <color name="colorYellow1">#ffffcc</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>
