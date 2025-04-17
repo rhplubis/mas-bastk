@@ -6,11 +6,11 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="14"
-8-->D:\Projects\Android\mas-auction-ebastk-motor\signature-pad\src\main\AndroidManifest.xml
+8-->D:\sc android\ebastk-motor\signature-pad\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="25" />
-9-->D:\Projects\Android\mas-auction-ebastk-motor\signature-pad\src\main\AndroidManifest.xml
+9-->D:\sc android\ebastk-motor\signature-pad\src\main\AndroidManifest.xml
 10
 11    <application />
-11-->D:\Projects\Android\mas-auction-ebastk-motor\signature-pad\src\main\AndroidManifest.xml:7:5-20
+11-->D:\sc android\ebastk-motor\signature-pad\src\main\AndroidManifest.xml:7:5-20
 12
 13</manifest>

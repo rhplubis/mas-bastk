@@ -480,6 +480,79 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Status Kunci"
+                        android:textColor="@color/text_hint"/>
+                    <Spinner
+                        android:id="@+id/spinnerStatusKunci"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="300"
+                        android:width="100dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="2dp"
+                        android:background="@color/colorYellow1"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTotalKunci"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="Total Kunci"/>
+                        <EditText
+                            android:id="@+id/editTextTotalKunci"
+                            android:inputType="number"
+                            android:min="1"
+                            android:max="4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="300"
+                            android:singleLine="true"
+                            android:textColor="@color/blue_gradient_end"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutKondisiKunci"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="Kondisi Kunci"
+                            android:textColor="@color/text_hint"/>
+                        <Spinner
+                            android:id="@+id/spinnerKondisiKunci"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="300"
+                            android:width="100dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingRight="2dp"
+                            android:background="@color/colorYellow1"/>
+                    </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp">
                     <Button
                         android:id="@+id/btn_next"

@@ -16,7 +16,6 @@
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../signature-pad/build/intermediates/javac/debug/classes" />
-    <output-test url="file://$MODULE_DIR$/../../../signature-pad/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../signature-pad/build/generated/aidl_source_output_dir/debug/out" />
     <content url="file://$MODULE_DIR$/../../../signature-pad/build/generated/ap_generated_sources/debug/out">
@@ -37,15 +36,15 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: com.android.databinding:baseLibrary:4.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.core:common:1.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.databinding:adapters:4.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.databinding:library:4.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.databinding:viewbinding:4.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.databinding:baseLibrary:4.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:common:1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.1.0" level="project" />
   </component>
 </module>

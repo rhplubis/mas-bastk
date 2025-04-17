@@ -41,6 +41,7 @@ import com.tunasrent.auctionapps.model.VendorAdapter;
 import com.tunasrent.auctionapps.util.UserSessionManager;
 import com.tunasrent.auctionapps.util.configuration;
 import com.tunasrent.auctionapps.util.RequestHandler;
+import android.widget.LinearLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -92,7 +93,7 @@ public class DisInputFormActivity extends AppCompatActivity {
     String _token;
     String _group;
 
-    int flagType = 0;
+    int flagType = 0, flagStatusKunci =0, flagKondisiKunci = 0;
     private List<Merk> merkList = new ArrayList<>();
     private List<Truck> truckList = new ArrayList<>();
     private List<Bus> busList = new ArrayList<>();
@@ -117,6 +118,11 @@ public class DisInputFormActivity extends AppCompatActivity {
     String jenis;
 
     Spinner spType;
+
+    private Spinner spinnerStatusKunci, spinnerKondisiKunci;
+    private LinearLayout layoutKondisiKunci, layoutTotalKunci;
+    private EditText editTextTotalKunci;
+
 
     private String[] type = {"SUV/MPV", "TRUCK", "BUS"};
     private String[] type_mtr = {"RODA 2"};
@@ -167,6 +173,51 @@ public class DisInputFormActivity extends AppCompatActivity {
 //        etCficabang = findViewById(R.id.et_cficabang);
         etLokasipool = findViewById(R.id.et_lokasipool);
         spType = findViewById(R.id.sp_typeunit);
+        spinnerStatusKunci = findViewById(R.id.spinnerStatusKunci);
+        spinnerKondisiKunci = findViewById(R.id.spinnerKondisiKunci);
+        layoutKondisiKunci = findViewById(R.id.layoutKondisiKunci);
+        layoutTotalKunci = findViewById(R.id.layoutTotalKunci);
+        editTextTotalKunci = findViewById(R.id.editTextTotalKunci);
+
+
+        // Data untuk Spinner Status Kunci
+        String[] statusKunciOptions = {"Tidak Ada", "Ada"};
+        ArrayAdapter<String> statusAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, statusKunciOptions);
+        statusAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerStatusKunci.setAdapter(statusAdapter);
+
+        // Data untuk Spinner Kondisi Kunci
+        String[] kondisiKunciOptions = {"Baik", "Tidak Baik"};
+        ArrayAdapter<String> kondisiAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, kondisiKunciOptions);
+        kondisiAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerKondisiKunci.setAdapter(kondisiAdapter);
+
+        // Saat pertama kali dibuka, sembunyikan Kondisi Kunci & Total Kunci
+        layoutKondisiKunci.setVisibility(View.GONE);
+        layoutTotalKunci.setVisibility(View.GONE);
+
+        spinnerStatusKunci.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) { // Jika "Tidak Ada" dipilih
+
+                    layoutKondisiKunci.setVisibility(View.GONE);
+                    layoutTotalKunci.setVisibility(View.GONE);
+                } else { // Jika "Ada" dipilih
+                    layoutKondisiKunci.setVisibility(View.VISIBLE);
+                    layoutTotalKunci.setVisibility(View.VISIBLE);
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                layoutKondisiKunci.setVisibility(View.GONE);
+                layoutTotalKunci.setVisibility(View.GONE);
+            }
+        });
+
+
         btnNext = findViewById(R.id.btn_next);
 
         //tanggal
@@ -231,6 +282,9 @@ public class DisInputFormActivity extends AppCompatActivity {
             etPukul.setText(results.first().getPukul());
 //            etLokasi_penarikan.setText(results.first().getLokasi_penarikan());
             spType.setSelection(results.first().getType(),true);
+            spinnerStatusKunci.setSelection(results.first().getStatusKunci(),true);
+            spinnerKondisiKunci.setSelection(results.first().getKondisiKunci(),true);
+
             autoCompleteTextView.setText(results.first().getVhcTypename());
 
             vhc_item_id = results.first().getVhcItemid();
@@ -238,6 +292,7 @@ public class DisInputFormActivity extends AppCompatActivity {
             vhc_type_name = results.first().getVhcTypename();
 
             etTahun.setText(results.first().getTahun());
+            editTextTotalKunci.setText(results.first().getTotalKunci());
             etStnk_an.setText(results.first().getStnk());
             etNopol1.setText(results.first().getNopol1());
             etNopol2.setText(results.first().getNopol2());
@@ -307,10 +362,13 @@ public class DisInputFormActivity extends AppCompatActivity {
 //                    obj.setLokasi_penarikan(etLokasi_penarikan.getText().toString());
                     obj.setMerk(autoCompleteTextView.getText().toString());
                     obj.setType(flagType);
+                    obj.setStatusKunci(flagStatusKunci);
+                    obj.setKondisiKunci(flagKondisiKunci);
                     obj.setVhcItemid(vhc_item_id);
                     obj.setVhcTypeid(vhc_type_id);
                     obj.setVhcTypename(vhc_type_name);
                     obj.setTahun(etTahun.getText().toString());
+                    obj.setTotalKunci(editTextTotalKunci.getText().toString());
                     obj.setStnk(etStnk_an.getText().toString());
                     obj.setNopol1(etNopol1.getText().toString());
                     obj.setNopol2(etNopol2.getText().toString());

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.jsibbold:zoomage:1.2.0@aar">
+  <library name="Gradle: com.jsibbold:zoomage:1.2.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8c3ecd4711e31c45431735863e729c2/zoomage-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>

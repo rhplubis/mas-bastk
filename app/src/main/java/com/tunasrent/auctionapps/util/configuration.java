@@ -9,13 +9,22 @@ public class configuration {
 //=>Server Onprem 76
 //    private static final String LINK_ADDRESS = "https://auction.tunasgroup.com:2233/mas-api/tunas/rental/";
 //=>Server Onprem 2.6
-//    private static final String LINK_ADDRESS = "http://tunasauctiondev.tunasgroup.com:443/bastk-api/tunas/rental/";
+  //private static final String LINK_ADDRESS = "https://tunasauctiondev.tunasgroup.com:443/bastk-api/tunas/rental/";
 
+  //server dev aws
+  //private static final String LINK_ADDRESS = "https://tunasauctiondev.tunasgroup.com:443/bastk-api/tunas/rental/";
     //    private static final String LINK_ADDRESS = "http://203.77.238.145/bastk-apiv2/tunas/rental/";
 //=>Server Production AWS
-    private static final String LINK_ADDRESS = "https://bastk.tunasauction.tunasgroup.com/tunas/rental/";
+    //private static final String LINK_ADDRESS = "https://bastk.tunasauction.tunasgroup.com/tunas/rental/";
 //    => Server Testing AWS
 //    private static final String LINK_ADDRESS = "https://test-bastk.tunasauction.tunasgroup.com/tunas/rental/";
+  //private static final String LINK_ADDRESS = "https://bastk.tunasauctiondev.tunasgroup.com/tunas/rental/";
+   //private static final String LINK_ADDRESS = "http://172.19.2.82:81/mas-auction-ebastk-api/tunas/rental/";
+   //private static final String LINK_ADDRESS = "http://172.20.10.4:81/mas-auction-ebastk-api/tunas/rental/";
+   private static final String LINK_ADDRESS = "http://192.168.66.248:81/mas-auction-ebastk-api/tunas/rental/";
+    //private static final String LINK_ADDRESS = "http://172.18.2.6:83/tunas/rental/";
+    //private static final String LINK_ADDRESS = "https://bastk.tunasauctiondev.tunasgroup.com/tunas/rental/";
+
     private static final String ACCOUNT = "account/";
     private static final String TRANS = "trans/";
 
@@ -46,8 +55,11 @@ public class configuration {
     public static final String URL_SHOW_NOTE = LINK_ADDRESS + TRANS + "shownote";
     public static final String URL_DETAIL_BASTK = LINK_ADDRESS + TRANS + "detailbastk";
     public static final String URL_GETDETAIL_BASTK = LINK_ADDRESS + TRANS + "getdetailbastk";
+
+    public static final String URL_DETAIL_APPROVAL_BASTK = LINK_ADDRESS + TRANS + "detailbastkapproval";
     public static final String URL_RECHECK_DISP = LINK_ADDRESS + TRANS + "recheckdispatcher";
     public static final String URL_FOTO = LINK_ADDRESS + TRANS + "showfoto";
+    public static final String URL_FOTO_APPROVAL = LINK_ADDRESS + TRANS + "showfotoApproval";
     public static final String URL_UPD_NOTE = LINK_ADDRESS + TRANS + "insertnote";
     public static final String URL_NO_BIAYA = LINK_ADDRESS + TRANS + "insertnomor";
     public static final String URL_INSERT_FORM = LINK_ADDRESS + TRANS + "insertform";
@@ -57,6 +69,12 @@ public class configuration {
     public static final String URL_TAKSASI = LINK_ADDRESS + TRANS + "taksasi";
     public static final String URL_GET_POOL = LINK_ADDRESS + TRANS + "getpool";
     public static final String URL_WAREHOUSE = LINK_ADDRESS + TRANS + "warehouse";
+
+    public static final String URL_UPDATE_UNITOUT = LINK_ADDRESS + TRANS + "unitoutreturn";
+
+    public static final String URL_UPDATE_UNITOUT_REASON = LINK_ADDRESS + TRANS + "updateReasonUnitOut";
+
+    public static final String URL_LIST_APPROVAL_UNIT_OUT = LINK_ADDRESS + TRANS + "ShowListApprovalUnitout";
 
 
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP
@@ -105,15 +123,15 @@ public class configuration {
 
     public static final String KEY_VHC_YEAR = "vehicle_year";
     public static final String KEY_VHC_COLOR = "vehicle_color";
-        public static final String KEY_VHC_ENGINE = "vehicle_engine_no";
+    public static final String KEY_VHC_ENGINE = "vehicle_engine_no";
     public static final String KEY_VHC_CHASIS = "vehicle_chasis_no";
-    //    public static final String KEY_VHC_YEAR = "year";
+//    public static final String KEY_VHC_YEAR = "year";
 //    public static final String KEY_VHC_COLOR = "color";
 //    public static final String KEY_VHC_ENGINE = "machine_no";
 //    public static final String KEY_VHC_CHASIS = "no_rangka";
     public static final String KEY_VHC_PENARIKAN = "vhc_loc_penarikan";
     public static final String KEY_LOC_POOL = "vhc_loc_pool";
-//    public static final String KEY_VEHICLEID = "police_no";
+    public static final String KEY_POLICE_NO = "police_no";
     public static final String KEY_VEHICLEID = "vehicle_id";
     public static final String KEY_VHC_TYPE = "vhc_type_name";
     public static final String KEY_VHC_CAT = "vhc_cat_name";
@@ -137,6 +155,7 @@ public class configuration {
     public static final String KEY_lokasi_penarikan = "lokasi_penarikan";
     public static final String KEY_MERk = "merk";
     public static final String KEY_TYPE = "type";
+    public static final String KEY_JENIS = "jenis_unit";
     public static final String KEY_TYPEID = "vhctypeid";
     public static final String KEY_TYPENAME = "vhctypename";
     public static final String KEY_ITEMID = "vhcitemid";
@@ -369,6 +388,15 @@ public class configuration {
     public static final String KEY_img12 = "img12";
     public static final String KEY_img13 = "img13";
     public static final String KEY_img14 = "img14";
+
+
+    public static final String KEY_img_unitout_ktp = "url_out_ktp";
+    public static final String KEY_img_unitout_unit_driver = "url_out_unit_driver";
+    public static final String KEY_img_unitout_gatepass = "url_out_gatepass";
+    public static final String KEY_img_unitout_reason_file = "url_reason_file";
+
+    public static final String KEY_status_unit = "status_unit";
+    public static final String KEY_status_approval = "status_approval";
 
     //==============================================================================
     //JSON Tags (hasil yang ditampilkan)

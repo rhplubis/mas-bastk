@@ -1,0 +1,3870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAddrStart"
+    tools:context=".unitout.UnitoutCekCeklistMotorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1E90FF"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText"></android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ggray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_check_yellow"
+                android:gravity="center"
+                android:text="Dispatcher Checklist"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorOrange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_btn_blue"
+                        android:gravity="center"
+                        android:text="1. BODY"
+                        android:textColor="@color/colorYellow1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover Kepala" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_kepala1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_kepala2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover speedometer" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_speedo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_speedo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sayap kanan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_sayap_kanan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_sayap_kanan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sayap kiri" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_sayap_kiri1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_sayap_kiri2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Spakboard depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_spak_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_spak_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover tengah" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_tengah1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_tengah2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover samping kanan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_spgkanan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_spgkanan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover samping kiri" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_spgkiri1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_spgkiri2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover rantai depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover rantai belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Spakboard belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_spak_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_spak_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover accu" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_accu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_accu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover lampu rem" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_lampurem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_lampurem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tangki bensin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_tangki_bensin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_tangki_bensin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover bawah" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_bawah1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_bawah2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dek/Board desk" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_dek_desk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_dek_desk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cover mesin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_mesin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cover_mesin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Embleem" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_emblem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_emblem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorOrange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_btn_blue"
+                        android:gravity="center"
+                        android:text="2. MESIN"
+                        android:textColor="@color/colorYellow1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blok Mesin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_blok_mesin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_blok_mesin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Carburator" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_carburator1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_carburator2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Filter Carburator" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_filter_carbu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_filter_carbu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Busi" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_busi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_busi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CDI" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cdi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cdi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Accu" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_accu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_accu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kick Stater" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_kick_starter1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_kick_starter2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Perseneling" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_perseneling1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_perseneling2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Knalpot" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_knalpot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_knalpot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Coil" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_coil1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_coil2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blok CVT" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_blok1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_blok2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tutup CVT" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_tutupcvt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_tutupcvt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Radiator" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_radiator1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_radiator2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorOrange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_btn_blue"
+                        android:gravity="center"
+                        android:text="3. LAMPU-LAMPU"
+                        android:textColor="@color/colorYellow1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_lampu_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_lampu_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Depan (kanan/kiri)" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_sein_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_sein_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Belakang (kanan/kiri)" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_sein_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_sein_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Rem" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_lampu_rem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_lampu_rem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorOrange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_btn_blue"
+                        android:gravity="center"
+                        android:text="4. KAKI-KAKI"
+                        android:textColor="@color/colorYellow1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Handle rem depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_handlerem_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_handlerem_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pedal rem belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_pedalrem_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_pedalrem_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Handle rem belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_handlerem_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_handlerem_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Handle kopling" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_handle_kopling1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_handle_kopling2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Master Rem" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_master_rem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_master_rem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Caliper" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_caliper1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_caliper2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cakram" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_cakram1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cakram2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shock depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_shock_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_shock_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shock belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_shock_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_shock_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tromol depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_tromol_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_tromol_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tromol belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_tromol_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_tromol_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Footstep depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_footstep_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_footstep_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Footstep belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_footstep_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_footstep_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Swing arm" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_swing_arm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_swing_arm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Rantai/Fanbelt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_fanbelt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_rantai_fanbelt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gear depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_gear_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_gear_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gear belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_gear_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_gear_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Standar tengah" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_standar_tengah1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_standar_tengah2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Standar samping" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_standar_samping1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_standar_samping2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ban depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_ban_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ban_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ban belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_ban_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ban_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Velg depan" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_velg_depan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_velg_depan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Velg belakang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_velg_blkg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_velg_blkg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorOrange">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_btn_blue"
+                        android:gravity="center"
+                        android:text="5. PERLENGKAPAN"
+                        android:textColor="@color/colorYellow1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kaca Spion" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_kaca_spion1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_kaca_spion2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Speedometer" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_speedometer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_speedometer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Grip stang" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Grip_stang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Grip_stang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Rumah kunci" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Rumah_kunci1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Rumah_kunci2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Klakson" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Klakson1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Klakson2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Behel" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Behel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Behel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tutup knalpot" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Tutup_knalpot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Tutup_knalpot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jok" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_jok1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_jok2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stripping" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Stripping1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Stripping2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tombol navigasi" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_Tombol_navigasi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_Tombol_navigasi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="STNK" />
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_sd_stnk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="s/d"
+                        android:textColor="@color/blue_gradient_end" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_stnk1_lain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_stnk2_lain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Hidup"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Buku Manual" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAddrEnd"
+                        android:padding="2dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_bukumnl1_lain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:width="120dp"
+                            android:background="@color/colorYellow1"
+                            android:checked="false"
+                            android:clickable="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Tidak Ada"
+                            android:textColor="@color/text_no_item" />
+
+                        <CheckBox
+                            android:id="@+id/cb_bukumnl2_lain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="100dp"
+                            android:background="@color/colorYellow1"
+                            android:clickable="false"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Rusak"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_button_green"
+                        android:text="NEXT"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
