@@ -10,10 +10,15 @@ public class InputData extends RealmObject {
     String lokasi_penarikan;
     String merk;
     int type;
+
+    int statusKunci;
+    int kondisiKunci;
     String vhcTypeid;
     String vhcTypename;
     String vhcItemid;
     String tahun;
+
+    String TotalKunci;
     String stnk;
     String nopol1;
     String nopol2;
@@ -86,6 +91,22 @@ public class InputData extends RealmObject {
         this.type = type;
     }
 
+    public int getStatusKunci() {
+        return statusKunci;
+    }
+
+    public void setStatusKunci(int statusKunci) {
+        this.statusKunci = statusKunci;
+    }
+
+    public int getKondisiKunci() {
+        return kondisiKunci;
+    }
+
+    public void setKondisiKunci(int kondisiKunci) {
+        this.kondisiKunci = kondisiKunci;
+    }
+
     public String getVhcTypeid() {
         return vhcTypeid;
     }
@@ -116,6 +137,14 @@ public class InputData extends RealmObject {
 
     public void setTahun(String tahun) {
         this.tahun = tahun;
+    }
+
+    public String getTotalKunci() {
+        return TotalKunci;
+    }
+
+    public void setTotalKunci(String TotalKunci) {
+        this.TotalKunci = TotalKunci;
     }
 
     public String getStnk() {

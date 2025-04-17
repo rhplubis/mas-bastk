@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +31,9 @@ import com.tunasrent.auctionapps.dispatcher.DisInputFormActivity;
 import com.tunasrent.auctionapps.mobilisasi.MobCekBastkListActivity;
 import com.tunasrent.auctionapps.mobilisasi.MobListActivity;
 import com.tunasrent.auctionapps.taksasi.TaksasiActivity;
+import com.tunasrent.auctionapps.unitout.UnitoutListActivity;
 import com.tunasrent.auctionapps.warehouse.WarehouseActivity;
+import com.tunasrent.auctionapps.approvalunitout.ApprovalUnitoutListActivity;
 
 import java.util.ArrayList;
 
@@ -38,6 +41,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> im
     public ArrayList<Menu> item_list;
     String[] jenis = {"-- Pilih Kategori --","RODA 2","RODA 4"};
     String[] jenis_khususmobilisasi = {"-- Pilih Kategori --","RODA 2","RODA 4"};
+    String[] jenis_unit = {"-- Pilih Jenis --","SOLD","UNSOLD"};
     Dialog myDialog;
 
     public MenuAdapter(ArrayList<Menu> arrayList) {
@@ -79,6 +83,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> im
                     ShowPopupWarehouse(v);
 //                    Intent i = new Intent(v.getContext(), WarehouseActivity.class);
 //                    v.getContext().startActivity(i);
+                }else if(item_list.get(position).getId().equals("6")){
+                    ShowPopupUnitout(v);
+                }else if(item_list.get(position).getId().equals("7")){
+                    ShowPopupApprovalUnitout(v);
                 }
 
                 //overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
@@ -320,7 +328,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> im
             public void onClick(View v) {
                 myDialog.dismiss();
             }
-    });
+        });
 
 //        btnInput.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -395,6 +403,141 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> im
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         myDialog.show();
     }
+
+    public void ShowPopupUnitout(View v) {
+        final TextView tvClose;
+        final Button btnInput;
+        //final Button btnApprove;
+        final Button btnCekbastk;
+
+        myDialog = new Dialog(v.getContext());
+
+        myDialog.setContentView(R.layout.popup_opsi_unitout);
+        tvClose =(TextView) myDialog.findViewById(R.id.tv_close);
+        btnInput = (Button) myDialog.findViewById(R.id.btn_input);
+        btnCekbastk = (Button) myDialog.findViewById(R.id.btn_cekbastk);
+        Spinner spin = (Spinner) myDialog.findViewById(R.id.sp_list);
+        Spinner jenisunit = (Spinner) myDialog.findViewById(R.id.jenisunit);
+
+        spin.setOnItemSelectedListener(this);
+        ArrayAdapter aa = new ArrayAdapter(v.getContext(), R.layout.support_simple_spinner_dropdown_item,jenis_khususmobilisasi);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(aa);
+
+        jenisunit.setOnItemSelectedListener(this);
+        ArrayAdapter bb = new ArrayAdapter(v.getContext(),R.layout.support_simple_spinner_dropdown_item,jenis_unit);
+        bb.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        jenisunit.setAdapter(bb);
+        //aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //spin.setAdapter(aa);
+
+        tvClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+
+        btnInput.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (spin.getSelectedItem().toString() == "-- Pilih Kategori --" && jenisunit.getSelectedItem().toString() == "-- Pilih Jenis --"  ){
+                    Toast.makeText(v.getContext(), "Mohon Lengkapi Form !!", Toast.LENGTH_SHORT).show();
+                } else {
+                    myDialog.dismiss();
+                    //Log.d("send","Angga Love Erik dan Keong");
+                    Intent i = new Intent(v.getContext(), UnitoutListActivity.class);
+                    //Log.d("send","Angga buguru");
+                    Bundle b = new Bundle();
+                    b.putString("parse_jenis",spin.getSelectedItem().toString());
+                    b.putString("parse_jenisunit",jenisunit.getSelectedItem().toString());
+                    i.putExtras(b);
+                    v.getContext().startActivity(i);
+                }
+            }
+        });
+
+//        btnCekbastk.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (spin.getSelectedItem().toString() == "-- Pilih Kategori --"){
+//                    Toast.makeText(v.getContext(), "Kategori harus dipilih !!", Toast.LENGTH_SHORT).show();
+//                }else{
+//                    myDialog.dismiss();
+//                    Intent i = new Intent(v.getContext(), MobCekBastkListActivity.class);
+//                    Bundle b = new Bundle();
+//                    b.putString("parse_jenis",spin.getSelectedItem().toString());
+//                    i.putExtras(b);
+//                    v.getContext().startActivity(i);
+//                }
+//            }
+//        });
+
+        myDialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation2;
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+
+    public void ShowPopupApprovalUnitout(View v) {
+        final TextView tvClose;
+        final Button btnInput;
+        //final Button btnApprove;
+        final Button btnCekbastk;
+
+        myDialog = new Dialog(v.getContext());
+
+        myDialog.setContentView(R.layout.popup_opsi_unitout);
+        tvClose =(TextView) myDialog.findViewById(R.id.tv_close);
+        btnInput = (Button) myDialog.findViewById(R.id.btn_input);
+        btnCekbastk = (Button) myDialog.findViewById(R.id.btn_cekbastk);
+        Spinner spin = (Spinner) myDialog.findViewById(R.id.sp_list);
+        Spinner jenisunit = (Spinner) myDialog.findViewById(R.id.jenisunit);
+
+        spin.setOnItemSelectedListener(this);
+        ArrayAdapter aa = new ArrayAdapter(v.getContext(), R.layout.support_simple_spinner_dropdown_item,jenis_khususmobilisasi);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(aa);
+
+        jenisunit.setOnItemSelectedListener(this);
+        ArrayAdapter bb = new ArrayAdapter(v.getContext(),R.layout.support_simple_spinner_dropdown_item,jenis_unit);
+        bb.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        jenisunit.setAdapter(bb);
+        //aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //spin.setAdapter(aa);
+
+        tvClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+
+        btnInput.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (spin.getSelectedItem().toString() == "-- Pilih Kategori --" && jenisunit.getSelectedItem().toString() == "-- Pilih Jenis --"  ){
+                    Toast.makeText(v.getContext(), "Mohon Lengkapi Form !!", Toast.LENGTH_SHORT).show();
+                } else {
+                    myDialog.dismiss();
+                    Intent i = new Intent(v.getContext(), ApprovalUnitoutListActivity.class);
+                    Bundle b = new Bundle();
+                    b.putString("parse_jenis",spin.getSelectedItem().toString());
+                    b.putString("parse_jenisunit",jenisunit.getSelectedItem().toString());
+                    i.putExtras(b);
+                    v.getContext().startActivity(i);
+                }
+            }
+        });
+        myDialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation2;
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
 
     @Override
     public int getItemCount() {

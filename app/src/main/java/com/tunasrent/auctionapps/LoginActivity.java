@@ -53,6 +53,7 @@ public class LoginActivity extends Activity {
         String _ccode = user.get(UserSessionManager.SES_CCODE);
         String _token = user.get(UserSessionManager.SES_TOKEN);
         String _group = user.get(UserSessionManager.SES_GROUP);
+        Log.d("key_form_login:", "Name: " + _name + ", Fullname: " + _fullname + ", AppID: " + _appid + ", CCode: " + _ccode + ", Token: " + _token + ", Group: " + _group);
 
         //jika session TRUE, maka akan langsung masuk ke MainActivity
         if (session.isUserLoggedIn()==true){

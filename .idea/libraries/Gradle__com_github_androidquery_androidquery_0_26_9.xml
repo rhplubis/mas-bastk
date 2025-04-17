@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.androidquery:androidquery:0.26.9">
+  <library name="Gradle: com.github.androidquery:androidquery:0.26.9" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.androidquery/androidquery/0.26.9/3d2eaa5246ebc804631e2b88b206adf9454abcdc/androidquery-0.26.9.jar!/" />
     </CLASSES>

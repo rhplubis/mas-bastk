@@ -80,6 +80,8 @@ public class MobInputFormActivity extends AppCompatActivity {
     //    EditText etLokasi_penarikan;
     EditText etTahun;
     EditText etStnk_an;
+
+    EditText etKunci;
     EditText etNopol;
     EditText etNopol1;
     EditText etNopol2;

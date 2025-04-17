@@ -9,10 +9,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- versi Oreo 8.0 -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission
-        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_icon_new"
@@ -40,6 +38,11 @@
         <activity android:name=".mobilisasi.MobCekBastkCeklistActivity" />
         <activity android:name=".mobilisasi.MobCekBastkListActivity" />
         <activity android:name=".mobilisasi.MobListActivity" />
+        <activity android:name=".unitout.UnitoutListActivity" />
+        <activity android:name=".approvalunitout.ApprovalUnitoutListActivity" />
+        <activity android:name=".approvalunitout.ApprovalUnitoutCekFormActivity" />
+        <activity android:name=".approvalunitout.ApprovalUnitoutCekCeklistActivity" />
+        <activity android:name=".approvalunitout.ApprovalUnitoutReasonReturnActivity" />
         <activity android:name=".dispatcher.DisCekBastkCeklistActivity" />
         <activity android:name=".dispatcher.DisCekBastkListActivity" />
         <activity android:name=".mobilisasi.MobInputSignActivity" />
@@ -55,6 +58,13 @@
         <activity android:name=".mobilisasi.MobInputCeklistMotorActivity" />
         <activity android:name=".mobilisasi.MobInputCeklistActivity" />
         <activity android:name=".mobilisasi.MobInputFormActivity" />
+        <activity android:name=".unitout.UnitoutInputFormActivity" />
+        <activity android:name=".unitout.UnitoutCekFormActivity" />
+        <activity android:name=".unitout.UnitoutCekCeklistActivity" />
+        <activity android:name=".unitout.UnitoutCekCeklistMotorActivity" />
+        <activity android:name=".unitout.UnitoutCekSignActivity" />
+        <activity android:name=".unitout.UnitoutCekFotoActivity" />
+        <activity android:name=".unitout.UnitoutReasonReturnActivity" />
         <activity android:name=".taksasi.TaksasiCekFotoActivity" />
         <activity android:name=".taksasi.TaksasiCekCeklistActivity" />
         <activity android:name=".taksasi.TaksasiCekCeklistMotorActivity" />

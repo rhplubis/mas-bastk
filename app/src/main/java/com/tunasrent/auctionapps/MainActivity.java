@@ -513,6 +513,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mDrawerLayout.closeDrawers();
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
+
         if(id == R.id.signout)
         {
             //Keluar dari program

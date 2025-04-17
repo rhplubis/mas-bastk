@@ -9,6 +9,9 @@
     <item android:id="@+id/change_password"
         android:title="Change Password"
         android:icon="@drawable/ic_key"></item>
+    <item android:id="@+id/approval_unit_out"
+        android:title="Approval Unit Out"
+        android:icon="@drawable/ic_key"></item>
     <!--<item android:id="@+id/notif"-->
         <!--android:title="Notification"-->
         <!--android:icon="@mipmap/notification"></item>-->
